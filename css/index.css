@@ -1,0 +1,13 @@
+.row{
+    display: flex;
+}
+.box{
+    width: 80px;
+    height: 80px;
+    border: 1px solid green;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+}
