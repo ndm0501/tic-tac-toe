@@ -15,12 +15,14 @@ var winCombinations = [
     [2,4,6],
 ];
 function checkWin(){
-    // var rowWin = if()
-    debugger
     for(let combination of winCombinations){
-        if(boxes[combination[0]].innerText === boxes[combination[1]].innerText && boxes[combination[1]].innerText === boxes[combination[2]].innerText && boxes[combination[0]].innerText){
+        if((boxes[combination[0]].innerText === boxes[combination[1]].innerText)
+         && (boxes[combination[1]].innerText === boxes[combination[2]].innerText) 
+         && boxes[combination[0]].innerText
+         ){
             winner = currentPlayer;
-            announceWinner(winner)
+            announceWinner(winner);
+            return; //no more comparisons once winner is decided
         }
     }
 }
